@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <h1>
+        {{ book.title }}<br/>
+        <small>
+            {{ book.authors|join(', ') }}
+        </small>
+    </h1>
+
+    <div>
+        {% for tag in book.tags %}
+            <span class="label label-default">{{ tag.name }}</span>
+        {% endfor %}
+    </div>
+
+    <p class="lead">
+        {{ book.description }}
+    </p>
+{% endblock %}
+
+{% block sidebar %}
+    <div class="section">
+        <a href="{{ path('book_index') }}" class="btn btn-link">
+            {{ 'action.back_to_list'|trans }}
+        </a>
+    </div>
+
+    <div class="section">
+        <a href="{{ path('book_edit', { id: book.id }) }}" class="btn btn-lg btn-block btn-success">
+            <i class="fa fa-edit"></i> {{ 'action.edit_contents'|trans }}
+        </a>
+    </div>
+
+    <div class="section actions">
+        {{ include('book/_form.html.twig', {
+            form: delete_form,
+            button_label: 'action.delete_post'|trans,
+            button_css: 'btn btn-lg btn-block btn-danger',
+            show_confirmation: true,
+        }, with_context = false) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+# AppBundle\Entity\Actor:
+#   actors_{1..40}:
+#     name (unique): <name()>
+
+AppBundle\Entity\Author:
+  authors_{1..40}:
+    name (unique): <translation(@self, 'name', ['en', 'ru'], 'name')>
+
+AppBundle\Entity\Tag:
+  tags_{1..40}:
+    locale: 'en'
+    name (unique): <localize('en', 'sentence', 1)>
+
+  tags_{41..80}:
+    locale: 'ru'
+    name (unique): <localize('ru', 'realText', 10)>
+
+AppBundle\Entity\Book:
+  books_{1..500}:
+    title: <translation(@self, 'title', ['en', 'ru'], 'realText', 30)>
+    description: <translation(@self, 'description', ['en', 'ru'], 'realText', 400)>
+    authors: <numberBetween(1, 3)>x @authors*
+    tags: <numberBetween(1, 10)>x @tags*
+
+# AppBundle\Entity\Movie:
+#   movies_{1..500}:
+#     title: <title()>
+#     description: <text()>
+#     quality: <numberBetween(1,6)>
+#     actors: <numberBetween(1, 10)>x @actors*
+#     tags: <numberBetween(1, 10)>x @tags*

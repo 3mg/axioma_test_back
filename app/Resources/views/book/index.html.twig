@@ -1,0 +1,64 @@
+{% extends 'layout.html.twig' %}
+
+{% block body_id 'book_index' %}
+
+{% block main %}
+    <h1>{{ 'title.book_list'|trans }}</h1>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>{{ 'label.title'|trans }}</th>
+            <th>{{ 'label.authors'|trans }}</th>
+            <th>{{ 'label.tags'|trans }}</th>
+            <th>{{ 'label.actions'|trans }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for book in books %}
+            <tr>
+                <td>{{ book.title }}</td>
+                <td>
+                    {% for author in book.authors %}
+                        <span class="label label-default">{{ author.name }}</span>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for tag in book.tags %}
+                        <span class="label label-default">{{ tag.name }}</span>
+                    {% endfor %}
+                </td>
+                <td>
+                    <div class="item-actions">
+                        <a href="{{ path('book_show', { id: book.id }) }}" class="btn btn-sm btn-default">
+                            {{ 'action.show'|trans }}
+                        </a>
+
+                        <a href="{{ path('book_edit', { id: book.id }) }}" class="btn btn-sm btn-primary">
+                            <i class="fa fa-edit"></i> {{ 'action.edit'|trans }}
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4" align="center">{{ 'book.no_books_found'|trans }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="navigation text-center">
+        {{ pagerfanta(books, 'twitter_bootstrap3', { routeName: 'book_index_paginated' }) }}
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    <div class="section actions">
+        <a href="{{ path('book_new') }}" class="btn btn-lg btn-block btn-success">
+            <i class="fa fa-plus"></i> {{ 'action.create_book'|trans }}
+        </a>
+    </div>
+
+    {{ parent() }}
+{% endblock %}

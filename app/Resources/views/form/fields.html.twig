@@ -1,0 +1,45 @@
+{#
+   Each field type is rendered by a template fragment, which is determined
+   by the value of your getName() method and the suffix _widget.
+
+   See http://symfony.com/doc/current/cookbook/form/create_custom_field_type.html#creating-a-template-for-the-field
+#}
+
+{% block app_datetimepicker_widget %}
+    {% spaceless %}
+        <div class="input-group date" data-toggle="datetimepicker">
+            {{ block('datetime_widget') }}
+            <span class="input-group-addon">
+                <span class="fa fa-calendar"></span>
+            </span>
+        </div>
+    {% endspaceless %}
+{% endblock %}
+
+{% block app_tag_widget %}
+    {% spaceless %}
+        {% set attr = attr|merge({multiple:'multiple', class: (attr.class|default('') ~ ' form-control j-app-tags')|trim}) %}
+        <select {{ block('widget_attributes') }}>
+            {% for tag in selected_tags %}
+                <option value="{{ tag.name }}" selected="selected">{{ tag.name }}</option>
+            {% endfor %}
+            {% for tag in tag_list %}
+                <option value="{{ tag.name }}">{{ tag.name }}</option>
+            {% endfor %}
+        </select>
+    {% endspaceless %}
+{% endblock %}
+
+{% block app_person_widget %}
+    {% spaceless %}
+        {% set attr = attr|merge({multiple:'multiple', class: (attr.class|default('') ~ ' form-control j-app-tags')|trim}) %}
+        <select {{ block('widget_attributes') }}>
+            {% for person in selected_values %}
+                <option value="{{ person.name }}" selected="selected">{{ person.name }}</option>
+            {% endfor %}
+            {% for person in values_list %}
+                <option value="{{ person.name }}">{{ person.name }}</option>
+            {% endfor %}
+        </select>
+    {% endspaceless %}
+{% endblock %}
