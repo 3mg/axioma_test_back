@@ -1,0 +1,25 @@
+DirectoryIndex web/app_dev.php
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+    
+    
+    RewriteCond %{HTTP:Authorization} ^(.*)
+    RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+    
+    RewriteBase /
+    
+    RewriteRule ^(.*) web/$1
+       
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ web/app_dev.php [QSA,L]
+    
+    # skip "real" requests
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule .* - [QSA,L]
+    
+</IfModule>
+# php_value xdebug.profiler_enable 0
+# php_value xdebug.profiler_output_dir /tmp
+# php_value realpath_cache_size 4096k
+# php_value realpath_cache_ttl 7200
