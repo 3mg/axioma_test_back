@@ -7,11 +7,13 @@ parameters:
     # in a real Symfony application you probably will use a MySQL or PostgreSQL database
     # the path must be relative or else it will not work on Windows
     # database_url:      'sqlite:///%kernel.root_dir%/data/blog.sqlite'
-    database_host:     127.0.0.1
-    database_port:     ~
-    database_name:     books_movies
-    database_user:     root
-    database_password: 381223
+    #database_host:     127.0.0.1
+    #database_port:     ~
+    #database_name:     books_movies
+    #database_user:     root
+    #database_password: 381223
+
+    database_url:      'mysql://root:books_movies@127.0.0.1:3306/books_movies'
 
     # Uncomment this line to use a MySQL database instead of SQLite:
     #
