@@ -73,16 +73,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new (1).xliff" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Загрузки/new (1).xliff">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/author/edit.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,11 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.ru.xlf" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout_movies.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/layout_movies.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.ru.xlf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.ru.xlf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="470" column="0" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="440" column="21" selection-start-line="440" selection-start-column="16" selection-end-line="440" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -172,7 +172,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/book/new.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/movie/new.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/movie/edit.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout_movies.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/movie/_delete_confirmation.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/book/_delete_confirmation.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/movie/index.html.twig" />
@@ -191,6 +190,7 @@
         <option value="$PROJECT_DIR$/app/Resources/views/actor/edit.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/translations/messages.en.xlf" />
         <option value="$PROJECT_DIR$/app/Resources/translations/messages.ru.xlf" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout_movies.html.twig" />
       </list>
     </option>
   </component>
@@ -1017,12 +1017,12 @@
       <option name="presentableId" value="Default" />
       <updated>1466721509140</updated>
       <workItem from="1466721513883" duration="8614000" />
-      <workItem from="1467058771469" duration="51157000" />
+      <workItem from="1467058771469" duration="51259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59771000" />
+    <option name="totallyTimeSpent" value="59873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
@@ -1349,14 +1349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout_movies.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Movie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -1453,16 +1445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/author/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#34#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/book/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1491,10 +1473,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/author/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#34#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.ru.xlf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="470" column="0" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="440" column="21" selection-start-line="440" selection-start-column="16" selection-end-line="440" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout_movies.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
