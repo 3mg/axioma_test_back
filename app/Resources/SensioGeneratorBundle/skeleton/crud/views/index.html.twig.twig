@@ -1,21 +1,22 @@
 {% block extends %}
-{{ "{% extends 'base.html.twig' %}" }}
+{{ "{% extends 'layout.html.twig' %}" }}
 {% endblock extends %}
 
 {% block body %}
-{{ "{% block body %}" }}
-    <h1>{{ entity }} list</h1>
+{{ "{% block body_id '"~ entity_singularized ~"_edit' %}" }}
+{{ "{% block main %}" }}
+    <h1>{{ '{{ title.'~entity_singularized ~ "_list|trans }}" }}</h1>
 
-    <table>
+    <table class="table table-striped">
         <thead>
             <tr>
             {%- for field, metadata in fields %}
 
-                <th>{{ field|capitalize }}</th>
+                <th>{{ "{{ 'label."~ field ~"'|trans }}" }}</th>
 
             {%- endfor %}
 
-                <th>Actions</th>
+                <th>{{ 'label.actions'|trans }}</th>
             </tr>
         </thead>
         <tbody>
@@ -73,9 +74,17 @@
         {%- endfor %}
 
             </tr>
+        {{ '{% else %}' }}
+        <tr>
+            <td colspan="4" align="center">{{ 'book.no_records_found'|trans }}</td>
+        </tr>
         {{ '{% endfor %}' }}
         </tbody>
     </table>
+
+    <div class="navigation text-center">
+        {{ "{{ pagerfanta("~ entity_pluralized ~", 'twitter_bootstrap3', { routeName: '"~ route_name_prefix ~"_index_paginated' }) }}" }}
+    </div>
 
     {% if 'new' in actions -%}
     <ul>
@@ -86,4 +95,15 @@
     {%- endif %}
 
 {{ "{% endblock %}" }}
+
+{{ "{% block sidebar %}
+    <div class=\"section actions\">
+        <a href=\"{{ path('" ~ route_name_prefix ~ "_new') }}\" class=\"btn btn-lg btn-block btn-success\">
+            <i class=\"fa fa-plus\"></i> {{ 'action.create_"~ entity_singularized ~"'|trans }}
+        </a>
+    </div>
+
+    {{ parent() }}
+{% endblock %}" }}
+
 {% endblock body %}

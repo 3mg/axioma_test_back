@@ -1,17 +1,30 @@
 {% block extends %}
-{{ "{% extends 'base.html.twig' %}" }}
+{{ "{% extends 'layout.html.twig' %}" }}
 {% endblock extends %}
 
 {% block body %}
-{{ "{% block body %}" }}
-    <h1>{{ entity }} edit</h1>
+{{ "{% block body_id '"~ entity_singularized ~"_edit' %}" }}
+{{ "{% block main %}" }}
+    <h1>{{ '{{ title.edit_'~entity_singularized ~ "|trans({'%id%': " ~ entity_singularized ~ "."~ identifier ~"}) }}" }}</h1>
 
-    {{ '{{ form_start(edit_form) }}' }}
-        {{ '{{ form_widget(edit_form) }}' }}
-        <input type="submit" value="Edit" />
-    {{ '{{ form_end(edit_form) }}' }}
+    {{ "{{ include('_form.html.twig', {
+        form: edit_form,
+        button_label: 'action.save'|trans,
+        include_back_to_home_link: true,
+    }, with_context = false) }}" }}
 
-{% set hide_edit, hide_delete = true, false %}
-{{ include('crud/views/others/record_actions.html.twig.twig') -}}
 {{ "{% endblock %}" }}
+
+{{ "{% block sidebar %}
+    <div class=\"section actions\">
+        {{ include('_form.html.twig', {
+            form: delete_form,
+            button_label: 'action.delete'|trans,
+            button_css: 'btn btn-lg btn-block btn-danger',
+            show_confirmation: true,
+        }, with_context = false) }}
+    </div>
+
+    {{ parent() }}
+{% endblock %}" }}
 {% endblock body %}

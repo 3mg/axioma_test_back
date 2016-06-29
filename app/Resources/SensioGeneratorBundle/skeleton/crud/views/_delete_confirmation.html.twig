@@ -3,8 +3,8 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <h4>{{ 'delete_book_modal.title'|trans }}</h4>
-                <p>{{ 'delete_book_modal.body'|trans }}</p>
+                <h4>{{ 'delete_'~ (entity|lower|replace({'\\': '/'})) ~'_modal.title'|trans }}</h4>
+                <p>{{ 'delete_'~ (entity|lower|replace({'\\': '/'})) ~'_modal.body'|trans }}</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" id="btnNo" data-dismiss="modal">

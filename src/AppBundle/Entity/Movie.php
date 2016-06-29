@@ -13,6 +13,26 @@ use Knp\DoctrineBehaviors\Model as ORMBehaviors;
  */
 class Movie
 {
+    use Translation\TranslatableTrait;
+
+    const QUALITY_DVDRIP = 1;
+    const QUALITY_HDRIP = 1;
+    const QUALITY_BDRIP = 1;
+    const QUALITY_720P = 1;
+    const QUALITY_1080P = 1;
+    const QUALITY_DVD5 = 1;
+
+    public static function getQualities() {
+        return [
+            self::QUALITY_DVDRIP => "dvdrip",
+            self::QUALITY_HDRIP => "hdrip",
+            self::QUALITY_BDRIP => "bdrip",
+            self::QUALITY_720P => "720p",
+            self::QUALITY_1080P => "1080p",
+            self::QUALITY_DVD5 => "dvd5",
+        ];
+    }
+
     /**
      * @var int
      *
@@ -21,20 +41,6 @@ class Movie
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="title", type="string", length=255, nullable=true)
-     */
-    private $title;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="description", type="text", length=2047, nullable=true)
-     */
-    private $description;
 
     /**
      * @var int
@@ -74,54 +80,6 @@ class Movie
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set title
-     *
-     * @param string $title
-     *
-     * @return Movie
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
-
-        return $this;
-    }
-
-    /**
-     * Get title
-     *
-     * @return string
-     */
-    public function getTitle()
-    {
-        return $this->title;
-    }
-
-    /**
-     * Set description
-     *
-     * @param string $description
-     *
-     * @return Movie
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-
-        return $this;
-    }
-
-    /**
-     * Get description
-     *
-     * @return string
-     */
-    public function getDescription()
-    {
-        return $this->description;
     }
 
     /**

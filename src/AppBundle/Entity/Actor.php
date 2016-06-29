@@ -13,6 +13,8 @@ use Knp\DoctrineBehaviors\Model as ORMBehaviors;
  */
 class Actor
 {
+    use Translation\TranslatableTrait;
+
     /**
      * @var int
      *
@@ -21,14 +23,6 @@ class Actor
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="name", type="string", length=255, nullable=false, unique=true)
-     */
-    private $name;
-
 
     /**
      * Get id
@@ -52,15 +46,5 @@ class Actor
         $this->name = $name;
 
         return $this;
-    }
-
-    /**
-     * Get name
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->name;
     }
 }
