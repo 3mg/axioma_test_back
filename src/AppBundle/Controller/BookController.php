@@ -93,7 +93,6 @@ class BookController extends Controller
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $em = $this->getDoctrine()->getManager();
-            dump($book, $book->getTitle());
             $em->persist($book);
             $em->flush();
 
