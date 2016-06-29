@@ -13,7 +13,7 @@ parameters:
     #database_user:     root
     #database_password: 381223
 
-    database_url:      'mysql://root:books_movies@127.0.0.1:3306/books_movies'
+    database_url:      'mysql://ve6ay7comro7mmcs:nacqelnaj8tcwdlq@bqmayq5x95g1sgr9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/xapagv1mrelu4jvf'
 
     # Uncomment this line to use a MySQL database instead of SQLite:
     #
