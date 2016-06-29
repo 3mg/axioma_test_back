@@ -16,7 +16,7 @@
 
             {%- endfor %}
 
-                <th>{{ 'label.actions'|trans }}</th>
+                {{ "<th>{{ 'label.actions'|trans }}</th>" }}
             </tr>
         </thead>
         <tbody>
@@ -76,7 +76,7 @@
             </tr>
         {{ '{% else %}' }}
         <tr>
-            <td colspan="4" align="center">{{ 'book.no_records_found'|trans }}</td>
+            <td colspan="4" align="center">{{ "{{ 'book.no_records_found'|trans }}" }}</td>
         </tr>
         {{ '{% endfor %}' }}
         </tbody>

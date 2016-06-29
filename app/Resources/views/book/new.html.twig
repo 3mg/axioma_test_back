@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout_books.html.twig' %}
 
 {% block main %}
     <h1>{{ 'title.book_new'|trans }}</h1>
@@ -10,7 +10,7 @@
             {% endif %}
         {% endfor %}
 
-        <input type="submit" value="{{ 'label.create_book'|trans }}" class="btn btn-primary" />
+        <input type="submit" value="{{ 'label.create'|trans }}" class="btn btn-primary" />
 
         {{ form_widget(form.saveAndCreateNew, { label: 'label.save_and_create_new', attr: { class: 'btn btn-primary' } }) }}
 

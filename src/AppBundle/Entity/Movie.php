@@ -33,6 +33,11 @@ class Movie
         ];
     }
 
+    public function getQualityString()
+    {
+        return self::getQualities()[$this->quality];
+    }
+
     /**
      * @var int
      *

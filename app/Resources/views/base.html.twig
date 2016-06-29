@@ -7,7 +7,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Symfony Demo application{% endblock %}</title>
+        <title>{% block title %}Books/Movies application{% endblock %}</title>
 
         {% block stylesheets %}
         {# uncomment the following lines to compile SCSS assets with Assetic
@@ -36,7 +36,7 @@
                     <div class="container">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="{{ path('homepage') }}">
-                                Symfony Demo
+                                Books/Movies
                             </a>
 
                             <button type="button" class="navbar-toggle"
@@ -52,19 +52,6 @@
                             <ul class="nav navbar-nav navbar-right">
 
                                 {% block header_navigation_links %}
-                                    <li>
-                                        <a href="{{ path('blog_index') }}">
-                                            <i class="fa fa-home"></i> {{ 'menu.homepage'|trans }}
-                                        </a>
-                                    </li>
-
-                                    {% if is_granted('ROLE_ADMIN') %}
-                                        <li>
-                                            <a href="{{ path('admin_post_index') }}">
-                                                <i class="fa fa-lock"></i> {{ 'menu.admin'|trans }}
-                                            </a>
-                                        </li>
-                                    {% endif %}
                                 {% endblock %}
 
                                 {% if app.user %}
