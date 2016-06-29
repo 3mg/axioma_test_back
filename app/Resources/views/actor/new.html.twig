@@ -1,0 +1,30 @@
+{% extends 'layout_movies.html.twig' %}
+
+{% block body_id 'actor_new' %}
+{% block body %}
+    <h1>{{ 'title.actor_new'|trans }}</h1>
+
+    {{ form_start(form) }}
+        
+        {% for child in form %}
+            {% if child.vars.name != 'saveAndCreateNew' %}
+                {{ form_row(child) }}
+            {% endif %}
+        {% endfor %}
+
+        <input type="submit" value="{{ 'label.create_book'|trans }}" class="btn btn-primary" />
+
+        {{ form_widget(form.saveAndCreateNew, { label: 'label.save_and_create_new', attr: { class: 'btn btn-primary' } }) }}
+
+        <a href="{{ path('actor_index') }}" class="btn btn-link">
+            {{ 'action.back_to_list'|trans }}
+        </a>
+    {{ form_end(form) }}
+
+{% endblock %}
+
+{% block sidebar %}
+    {{ parent() }}
+
+    {{ show_source_code(_self) }}
+{% endblock %}

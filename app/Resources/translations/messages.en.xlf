@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="aad653ca3ee669635f2938b73098b6d7" resname="note">
+        <source>note</source>
+        <target>NOTE</target>
+      </trans-unit>
+      <trans-unit id="6a2139364f96787c8ce1bbb0070b898c" resname="tip">
+        <source>tip</source>
+        <target>TIP</target>
+      </trans-unit>
+      <trans-unit id="f12737f0cd6428651d191d5ad06b97f3" resname="not_available">
+        <source>not_available</source>
+        <target>Not available</target>
+      </trans-unit>
+      <trans-unit id="5190738e75fe9f1d2b8516d5f217465b" resname="mit_license">
+        <source>mit_license</source>
+        <target>MIT License</target>
+      </trans-unit>
+      <trans-unit id="dd1f775e443ff3b9a89270713580a51b" resname="Previous">
+        <source>Previous</source>
+        <target>Previous</target>
+      </trans-unit>
+      <trans-unit id="10ac3d04253ef7e1ddc73e6091c0cd55" resname="Next">
+        <source>Next</source>
+        <target>Next</target>
+      </trans-unit>
+      <trans-unit id="a15b36a90fe2807964b12498b16c81fd" resname="http_error.name">
+        <source>http_error.name</source>
+        <target>Error %status_code%</target>
+      </trans-unit>
+      <trans-unit id="d211be915c93704b7ae0f77e0a9f8dad" resname="http_error.description">
+        <source>http_error.description</source>
+        <target>There was an unknown error (HTTP %status_code%) that prevented to complete your request.</target>
+      </trans-unit>
+      <trans-unit id="07443f4a5b4e5384ca98065320ee6866" resname="http_error.suggestion">
+        <source>http_error.suggestion</source>
+        <target>Try loading this page again in some minutes or &lt;a href="%url%"&gt;go back to the homepage&lt;/a&gt;.</target>
+      </trans-unit>
+      <trans-unit id="809f34819ade6d3c961c92c345683043" resname="http_error_403.description">
+        <source>http_error_403.description</source>
+        <target>You don't have permission to access to this resource.</target>
+      </trans-unit>
+      <trans-unit id="32459f1248f5971ad19242163e88d147" resname="http_error_403.suggestion">
+        <source>http_error_403.suggestion</source>
+        <target>Ask your manager or system administrator to grant you access to this resource.</target>
+      </trans-unit>
+      <trans-unit id="f5375e08d05e7599a73cd20f6e52fb60" resname="http_error_404.description">
+        <source>http_error_404.description</source>
+        <target>We couldn't find the page you requested.</target>
+      </trans-unit>
+      <trans-unit id="ff63f10ada848040229591c37cd8419c" resname="http_error_404.suggestion">
+        <source>http_error_404.suggestion</source>
+        <target>Check out any misspelling in the URL or &lt;a href="%url%"&gt;go back to the homepage&lt;/a&gt;.</target>
+      </trans-unit>
+      <trans-unit id="ad1dbb7fce5f47e8be2aef8c3de0ffb6" resname="http_error_500.description">
+        <source>http_error_500.description</source>
+        <target>There was an internal server error.</target>
+      </trans-unit>
+      <trans-unit id="fc7ef4f229e3050da2251a02549858d6" resname="http_error_500.suggestion">
+        <source>http_error_500.suggestion</source>
+        <target>Try loading this page again in some minutes or &lt;a href="%url%"&gt;go back to the homepage&lt;/a&gt;.</target>
+      </trans-unit>
+      <trans-unit id="9d15754f37a26a942b5edcad2da9b5dc" resname="title.homepage">
+        <source>title.homepage</source>
+        <target>Welcome to the &lt;strong&gt;Books/Movies&lt;/strong&gt; application</target>
+      </trans-unit>
+      <trans-unit id="6aedc9099c10ddb741e3fe695dbea8ba" resname="title.source_code">
+        <source>title.source_code</source>
+        <target>Source code used to render this page</target>
+      </trans-unit>
+      <trans-unit id="6d9d5f93e32e871f9e117a35eda2f4ae" resname="title.controller_code">
+        <source>title.controller_code</source>
+        <target>Controller code</target>
+      </trans-unit>
+      <trans-unit id="16dfb3efb800594f778fd912242abda3" resname="title.twig_template_code">
+        <source>title.twig_template_code</source>
+        <target>Twig template code</target>
+      </trans-unit>
+      <trans-unit id="d7d0dc5d9eaeedc89b1c87bd4a21d1ec" resname="title.login">
+        <source>title.login</source>
+        <target>Secure Sign in</target>
+      </trans-unit>
+      <trans-unit id="04a6524e12dc0bad0a3146c8e767ccb6" resname="title.post_list">
+        <source>title.post_list</source>
+        <target>Post List</target>
+      </trans-unit>
+      <trans-unit id="cf4fc2a194796551ff7ef0a8ec2dea52" resname="title.edit_post">
+        <source>title.edit_post</source>
+        <target>Edit post #%id%</target>
+      </trans-unit>
+      <trans-unit id="45508766fa21dbc4482d656e3356caa3" resname="title.add_comment">
+        <source>title.add_comment</source>
+        <target>Add a comment</target>
+      </trans-unit>
+      <trans-unit id="ec2630f99072afa9b99b4104106af004" resname="title.comment_error">
+        <source>title.comment_error</source>
+        <target>There was an error publishing your comment</target>
+      </trans-unit>
+      <trans-unit id="0f979b3ce9426b2631a3fe2790fcff66" resname="action.show">
+        <source>action.show</source>
+        <target>Show</target>
+      </trans-unit>
+      <trans-unit id="05e776a18694bca884fdeedd3c4bfe84" resname="action.show_code">
+        <source>action.show_code</source>
+        <target>Show code</target>
+      </trans-unit>
+      <trans-unit id="78a93d081740517015711367da2007ee" resname="action.edit">
+        <source>action.edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="28afaad0dfd92619ad0098358eb9426d" resname="action.edit_post">
+        <source>action.edit_post</source>
+        <target>Edit post</target>
+      </trans-unit>
+      <trans-unit id="e0cecfbe5aa7f0480019f8d6a9951057" resname="action.save">
+        <source>action.save</source>
+        <target>Save changes</target>
+      </trans-unit>
+      <trans-unit id="e7a88703d1e70bf8516f19b164e5cdb2" resname="action.delete_post">
+        <source>action.delete_post</source>
+        <target>Delete post</target>
+      </trans-unit>
+      <trans-unit id="ee9f0dcef262f08815f02cff0ace9cac" resname="delete_post_modal.title">
+        <source>delete_post_modal.title</source>
+        <target>Are you sure you want to delete this post?</target>
+      </trans-unit>
+      <trans-unit id="e92809cb838e6e031ebc9b987790dbf3" resname="delete_post_modal.body">
+        <source>delete_post_modal.body</source>
+        <target>This action cannot be undone.</target>
+      </trans-unit>
+      <trans-unit id="fbef78b7a288981d0cb77292ec57151d" resname="label.delete_post">
+        <source>label.delete_post</source>
+        <target>Delete post</target>
+      </trans-unit>
+      <trans-unit id="8b104002f62df6f7ab45fc174877bbb9" resname="label.cancel">
+        <source>label.cancel</source>
+        <target>Cancel</target>
+      </trans-unit>
+      <trans-unit id="021f4d61fceadf8a10f853084cc0c949" resname="action.create_post">
+        <source>action.create_post</source>
+        <target>Create a new post</target>
+      </trans-unit>
+      <trans-unit id="9a3fc4e99a5e3ee2b6156bc75d50127e" resname="label.create_post">
+        <source>label.create_post</source>
+        <target>Create post</target>
+      </trans-unit>
+      <trans-unit id="78004a37c7ef69db7437279402a272ef" resname="label.save_and_create_new">
+        <source>label.save_and_create_new</source>
+        <target>Save and create new</target>
+      </trans-unit>
+      <trans-unit id="5c6b5c0769ee5dbee4319b85d5df557b" resname="action.back_to_list">
+        <source>action.back_to_list</source>
+        <target>Back to list</target>
+      </trans-unit>
+      <trans-unit id="25d868fd5aef8a9769bcf6a02f5a2603" resname="action.publish_comment">
+        <source>action.publish_comment</source>
+        <target>Publish comment</target>
+      </trans-unit>
+      <trans-unit id="4bfbf0db73df22d646d141f80acf1f4d" resname="action.sign_in">
+        <source>action.sign_in</source>
+        <target>Sign in</target>
+      </trans-unit>
+      <trans-unit id="1c5eeb3081f495d916c60fcc741285fb" resname="action.browse_app">
+        <source>action.browse_app</source>
+        <target>Browse application</target>
+      </trans-unit>
+      <trans-unit id="a32529da96e80766af0315b864c9ece1" resname="action.browse_admin">
+        <source>action.browse_admin</source>
+        <target>Browse backend</target>
+      </trans-unit>
+      <trans-unit id="1dac0a2327e9a4b8516f7ffc8d27871f" resname="label.title">
+        <source>label.title</source>
+        <target>Title</target>
+      </trans-unit>
+      <trans-unit id="ecff238df6bef2fb0d887c0d7cc54c45" resname="label.author">
+        <source>label.author</source>
+        <target>Author</target>
+      </trans-unit>
+      <trans-unit id="3a705bd9da02cfc6b65097f78e591eeb" resname="label.author_email">
+        <source>label.author_email</source>
+        <target>Author email</target>
+      </trans-unit>
+      <trans-unit id="717ecfaa9d198197bc4a8a5403461d48" resname="label.username">
+        <source>label.username</source>
+        <target>Username</target>
+      </trans-unit>
+      <trans-unit id="a14f198f3da0de3396729d0fd7636731" resname="label.password">
+        <source>label.password</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="462cc3f86a1fee6c52348107e9dca891" resname="label.role">
+        <source>label.role</source>
+        <target>Role</target>
+      </trans-unit>
+      <trans-unit id="5d117de711f9f95e65d8807961781500" resname="label.content">
+        <source>label.content</source>
+        <target>Content</target>
+      </trans-unit>
+      <trans-unit id="851d5dfd681cf33f79218ad425badd2b" resname="label.summary">
+        <source>label.summary</source>
+        <target>Summary</target>
+      </trans-unit>
+      <trans-unit id="b1081e4848d9868e91953d6d2f07785c" resname="label.published_at">
+        <source>label.published_at</source>
+        <target>Published at</target>
+      </trans-unit>
+      <trans-unit id="15534ea437585961cc72992fc9722073" resname="label.actions">
+        <source>label.actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="665629b382e01fa73eac865cbd389fed" resname="title.post_new">
+        <source>title.post_new</source>
+        <target>Post creation</target>
+      </trans-unit>
+      <trans-unit id="6bc0617c5b8f09829938c29e0ca586eb" resname="action.edit_contents">
+        <source>action.edit_contents</source>
+        <target>Edit contents</target>
+      </trans-unit>
+      <trans-unit id="d769c3934d547a0a7d5e1623158d0d20" resname="menu.post_list">
+        <source>menu.post_list</source>
+        <target>Post list</target>
+      </trans-unit>
+      <trans-unit id="15978f6181234a67568ed28477f2a137" resname="menu.back_to_blog">
+        <source>menu.back_to_blog</source>
+        <target>Back to blog</target>
+      </trans-unit>
+      <trans-unit id="170ebfa198986e2b77913834c0b4c5c3" resname="menu.homepage">
+        <source>menu.homepage</source>
+        <target>Homepage</target>
+      </trans-unit>
+      <trans-unit id="163bf4b4eb252ff6259fd476cc5f5f4a" resname="menu.admin">
+        <source>menu.admin</source>
+        <target>Backend</target>
+      </trans-unit>
+      <trans-unit id="797a9670e2732097498906b9e515da2d" resname="menu.logout">
+        <source>menu.logout</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="eaeb7c03c0f9f78659173f9704bec2e7" resname="post.to_publish_a_comment">
+        <source>post.to_publish_a_comment</source>
+        <target>to publish a comment</target>
+      </trans-unit>
+      <trans-unit id="cb9e2f9d802dcbe79de6663f6566fc0b" resname="post.num_comments">
+        <source>post.num_comments</source>
+        <target>%count% comment|%count% comments</target>
+      </trans-unit>
+      <trans-unit id="79ab93eed57a615e0bd4d3dd7c1e1d7e" resname="post.commented_on">
+        <source>post.commented_on</source>
+        <target>commented on</target>
+      </trans-unit>
+      <trans-unit id="108f01c186c8ca0ca461e2e7c1c33601" resname="post.no_comments">
+        <source>post.no_comments</source>
+        <target>Be the first to comment on this post.</target>
+      </trans-unit>
+      <trans-unit id="c26ac849099fb8b6c3c132757cb275f8" resname="post.no_posts_found">
+        <source>post.no_posts_found</source>
+        <target>No posts found.</target>
+      </trans-unit>
+      <trans-unit id="9175061c0996bf762c69f734b7f5095e" resname="post.created_successfully">
+        <source>post.created_successfully</source>
+        <target>Post created successfully!</target>
+      </trans-unit>
+      <trans-unit id="b9f540e61fb5e031042f3c2c4d504ff8" resname="post.updated_successfully">
+        <source>post.updated_successfully</source>
+        <target>Post updated successfully!</target>
+      </trans-unit>
+      <trans-unit id="05d116286f0f10992198d26387986cff" resname="post.deleted_successfully">
+        <source>post.deleted_successfully</source>
+        <target>Post deleted successfully!</target>
+      </trans-unit>
+      <trans-unit id="411d2514756eb7816b1b455dba129810" resname="help.app_description">
+        <source>help.app_description</source>
+        <target>This is a &lt;strong&gt;demo application&lt;/strong&gt; built in the Symfony Framework to complete AXIOMA test task.</target>
+      </trans-unit>
+      <trans-unit id="d49aef2def859e7c5c20b41925dd06ab" resname="help.show_code">
+        <source>help.show_code</source>
+        <target>Click on this button to show the source code of the &lt;strong&gt;Controller&lt;/strong&gt; and &lt;strong&gt;template&lt;/strong&gt; used to render this page.</target>
+      </trans-unit>
+      <trans-unit id="db60062ff02f0993eac57b7c38c45a0a" resname="help.browse_app">
+        <source>help.browse_app</source>
+        <target>Browse the &lt;strong&gt;public section&lt;/strong&gt; of the demo application.</target>
+      </trans-unit>
+      <trans-unit id="e444099d9cbfc3713ea3c284c384e688" resname="help.browse_admin">
+        <source>help.browse_admin</source>
+        <target>Browse the &lt;strong&gt;admin backend&lt;/strong&gt; of the demo application.</target>
+      </trans-unit>
+      <trans-unit id="83c8f6b769170fd9fbd13da3dab0fa66" resname="help.login_users">
+        <source>help.login_users</source>
+        <target>Try either of the following users</target>
+      </trans-unit>
+      <trans-unit id="d7d9935a52a4e41dd0cbd1e32a2d4c6d" resname="help.role_user">
+        <source>help.role_user</source>
+        <target>regular user</target>
+      </trans-unit>
+      <trans-unit id="be31f309c74bd604b2622f99a88f434b" resname="help.role_admin">
+        <source>help.role_admin</source>
+        <target>administrator</target>
+      </trans-unit>
+      <trans-unit id="50e55fc1ed34cb602fbfdb36b91a9136" resname="help.reload_fixtures">
+        <source>help.reload_fixtures</source>
+        <target>If these users don't work, reload application fixtures by running this command from the terminal:</target>
+      </trans-unit>
+      <trans-unit id="932f7d3714683328370a456f66af3bc4" resname="help.add_user">
+        <source>help.add_user</source>
+        <target>If you want to create new users, run this other command:</target>
+      </trans-unit>
+      <trans-unit id="f01db44ec90e2028b7791a99651cedf4" resname="help.more_information">
+        <source>help.more_information</source>
+        <target>For more information, check out the &lt;a href="http://symfony.com/doc"&gt;Symfony doc&lt;/a&gt;.</target>
+      </trans-unit>
+      <trans-unit id="a62eb4e014999fa1306e0d10cea8b711" resname="title.book_new">
+        <source>title.book_new</source>
+        <target>New book</target>
+      </trans-unit>
+      <trans-unit id="bfad962cea19600ad238f184119cab00" resname="label.create">
+        <source>label.create</source>
+        <target>Create</target>
+      </trans-unit>
+      <trans-unit id="da724270d5d957acd58e167f96a67941" resname="title.edit_book">
+        <source>title.edit_book</source>
+        <target>Edit book</target>
+      </trans-unit>
+      <trans-unit id="d62880a2ce8b87a47177e63d69fa8306" resname="action.delete">
+        <source>action.delete</source>
+        <target>Delete</target>
+      </trans-unit>
+      <trans-unit id="4308829cd238477e4f5962631f10a884" resname="delete_modal.title">
+        <source>delete_modal.title</source>
+        <target>Are you sure you want to delete this record?</target>
+      </trans-unit>
+      <trans-unit id="c3dbd39709543518d0429746ecfb5bad" resname="delete_modal.body">
+        <source>delete_modal.body</source>
+        <target>This action cannot be undone.</target>
+      </trans-unit>
+      <trans-unit id="24c8b5767001f4785021c31ab703a084" resname="label.delete">
+        <source>label.delete</source>
+        <target>Delete</target>
+      </trans-unit>
+      <trans-unit id="bf01fa7d6a7668a429cc20b66f352fcb" resname="title.book_list">
+        <source>title.book_list</source>
+        <target>Books</target>
+      </trans-unit>
+      <trans-unit id="45f8396273930bda62348e91232aad58" resname="label.authors">
+        <source>label.authors</source>
+        <target>Authors</target>
+      </trans-unit>
+      <trans-unit id="114c6cf59141ba18d93ca726a150db7d" resname="label.tags">
+        <source>label.tags</source>
+        <target>Tags</target>
+      </trans-unit>
+      <trans-unit id="44e071aa3758dc0957ef3a4e832860fe" resname="book.no_books_found">
+        <source>book.no_books_found</source>
+        <target>No books found</target>
+      </trans-unit>
+      <trans-unit id="42a00b5f3f00267a9052ebb74239a3b2" resname="action.create_book">
+        <source>action.create_book</source>
+        <target>Create book</target>
+      </trans-unit>
+      <trans-unit id="fffba7f20e58ef0b21b7b07107d82b8a" resname="title.actor_new">
+        <source>title.actor_new</source>
+        <target>New actor</target>
+      </trans-unit>
+      <trans-unit id="9dbf2587ab34a698171fa1f7ce8bcd09" resname="label.create_book">
+        <source>label.create_book</source>
+        <target>Create book</target>
+      </trans-unit>
+      <trans-unit id="a7c7bdecbec2646f541ce99680081553" resname="title.edit_actor">
+        <source>title.edit_actor</source>
+        <target>Edit actor</target>
+      </trans-unit>
+      <trans-unit id="e1d8edaef6486a84a0949e2ee5aff4e5" resname="delete_book_modal.title">
+        <source>delete_book_modal.title</source>
+        <target>Are you sure you want to delete this book?</target>
+      </trans-unit>
+      <trans-unit id="13080ca26d20b385dc6c562bb0b61a77" resname="delete_book_modal.body">
+        <source>delete_book_modal.body</source>
+        <target>This action cannot be undone.</target>
+      </trans-unit>
+      <trans-unit id="c6a54485b7257c3052768d662840f6c9" resname="title.actor_list">
+        <source>title.actor_list</source>
+        <target>Actors</target>
+      </trans-unit>
+      <trans-unit id="63a8c152b2f20462a41fabb0aed78b90" resname="label.name">
+        <source>label.name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="83b563925cce6fbf918842df8c259d61" resname="book.no_records_found">
+        <source>book.no_records_found</source>
+        <target>No records found</target>
+      </trans-unit>
+      <trans-unit id="c00e2698cb56107b3c0c504a02ac08f5" resname="action.create_actor">
+        <source>action.create_actor</source>
+        <target>Create actor</target>
+      </trans-unit>
+      <trans-unit id="e3c81100b9d1d7edf0c9ab581598b3b1" resname="help.browse_books">
+        <source>help.browse_books</source>
+        <target>Browse books</target>
+      </trans-unit>
+      <trans-unit id="5751e2f51dda8a6e1744ed225e5e9a0f" resname="action.browse_books">
+        <source>action.browse_books</source>
+        <target>Books</target>
+      </trans-unit>
+      <trans-unit id="b87280d02f25c853781f55f75e5a0869" resname="help.browse_movies">
+        <source>help.browse_movies</source>
+        <target>Browse movies</target>
+      </trans-unit>
+      <trans-unit id="33fc8e8f3e11332a9aae4b8da75c9bed" resname="action.browse_movies">
+        <source>action.browse_movies</source>
+        <target>Movies</target>
+      </trans-unit>
+      <trans-unit id="5876bb5a8802883758ef65d1178d46b1" resname="title.author_new">
+        <source>title.author_new</source>
+        <target>New author</target>
+      </trans-unit>
+      <trans-unit id="5c94d1efd49cecab720835b882748f39" resname="title.edit_author">
+        <source>title.edit_author</source>
+        <target>Edit author</target>
+      </trans-unit>
+      <trans-unit id="b783fbfe8ec686c6a4b693e288994065" resname="title.author_list">
+        <source>title.author_list</source>
+        <target>Authors</target>
+      </trans-unit>
+      <trans-unit id="3a071152379a9986f303731349d23ad1" resname="action.create_author">
+        <source>action.create_author</source>
+        <target>Create author</target>
+      </trans-unit>
+      <trans-unit id="74c390159aa21fce4e3099e9e9670544" resname="title.movie_new">
+        <source>title.movie_new</source>
+        <target>New movie</target>
+      </trans-unit>
+      <trans-unit id="b982cffebb1edc290bbb5389a6c6f5f7" resname="title.edit_movie">
+        <source>title.edit_movie</source>
+        <target>Edit movie</target>
+      </trans-unit>
+      <trans-unit id="7ee25171cdc23e138b5e8aad2d12d9a3" resname="title.movie_list">
+        <source>title.movie_list</source>
+        <target>Movies</target>
+      </trans-unit>
+      <trans-unit id="89adc6b1371bac2278f66d99a39696d6" resname="label.actors">
+        <source>label.actors</source>
+        <target>Actors</target>
+      </trans-unit>
+      <trans-unit id="2630369864a2bef1a7200a38d92bb824" resname="label.quality">
+        <source>label.quality</source>
+        <target>Quality</target>
+      </trans-unit>
+      <trans-unit id="1105f43074bc0ae665de89301f61087a" resname="movie.no_movies_found">
+        <source>movie.no_movies_found</source>
+        <target>No movies found</target>
+      </trans-unit>
+      <trans-unit id="ad752ce619289721513d127f29e3c3aa" resname="action.create_movie">
+        <source>action.create_movie</source>
+        <target>Create movie</target>
+      </trans-unit>
+      <trans-unit id="6bf3c7eba3dab68daf954377b60e90e4" resname="action.browse_authors">
+        <source>action.browse_authors</source>
+        <target>Authors</target>
+      </trans-unit>
+      <trans-unit id="fa319684369eb806df68031ef6672e78" resname="action.browse_actors">
+        <source>action.browse_actors</source>
+        <target>Actors</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

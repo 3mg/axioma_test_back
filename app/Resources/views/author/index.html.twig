@@ -1,0 +1,53 @@
+{% extends 'layout_books.html.twig' %}
+
+{% block body_id 'author_edit' %}
+{% block main %}
+    <h1>{{ 'title.author_list'|trans }}</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>{{ 'label.name'|trans }}</th>
+                <th>{{ 'label.actions'|trans }}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for author in authors %}
+            <tr>
+                <td><a href="{{ path('author_show', { 'id': author.id }) }}">{{ author.name }}</a></td>
+                <td>
+                    <div class="item-actions">
+                        <a href="{{ path('author_show', { id: author.id }) }}" class="btn btn-sm btn-default">
+                            {{ 'action.show'|trans }}
+                        </a>
+
+                        <a href="{{ path('author_edit', { id: author.id }) }}" class="btn btn-sm btn-primary">
+                            <i class="fa fa-edit"></i> {{ 'action.edit'|trans }}
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        {% else %}
+        <tr>
+            <td colspan="4" align="center">{{ 'book.no_records_found'|trans }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="navigation text-center">
+        {{ pagerfanta(authors, 'twitter_bootstrap3', { routeName: 'author_index_paginated' }) }}
+    </div>
+
+{% endblock %}
+
+{% block sidebar %}
+    <div class="section actions">
+        <a href="{{ path('author_new') }}" class="btn btn-lg btn-block btn-success">
+            <i class="fa fa-plus"></i> {{ 'action.create_author'|trans }}
+        </a>
+    </div>
+
+    {{ parent() }}
+{% endblock %}
+

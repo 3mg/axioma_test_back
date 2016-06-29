@@ -1,0 +1,53 @@
+{% extends 'layout_movies.html.twig' %}
+
+{% block body_id 'actor_edit' %}
+{% block main %}
+    <h1>{{ 'title.actor_list'|trans }}</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>{{ 'label.name'|trans }}</th>
+                <th>{{ 'label.actions'|trans }}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for actor in actors %}
+            <tr>
+                <td><a href="{{ path('actor_show', { 'id': actor.id }) }}">{{ actor.name }}</a></td>
+                <td>
+                    <div class="item-actions">
+                        <a href="{{ path('actor_show', { id: actor.id }) }}" class="btn btn-sm btn-default">
+                            {{ 'action.show'|trans }}
+                        </a>
+
+                        <a href="{{ path('actor_edit', { id: actor.id }) }}" class="btn btn-sm btn-primary">
+                            <i class="fa fa-edit"></i> {{ 'action.edit'|trans }}
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        {% else %}
+        <tr>
+            <td colspan="4" align="center">{{ 'book.no_records_found'|trans }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="navigation text-center">
+        {{ pagerfanta(actors, 'twitter_bootstrap3', { routeName: 'actor_index_paginated' }) }}
+    </div>
+
+{% endblock %}
+
+{% block sidebar %}
+    <div class="section actions">
+        <a href="{{ path('actor_new') }}" class="btn btn-lg btn-block btn-success">
+            <i class="fa fa-plus"></i> {{ 'action.create_actor'|trans }}
+        </a>
+    </div>
+
+    {{ parent() }}
+{% endblock %}
+

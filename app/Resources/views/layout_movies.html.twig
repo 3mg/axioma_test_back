@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block header_navigation_links %}
+    <li>
+        <a class="btn btn-primary btn-lg" href="{{ path('actor_index') }}">
+            <i class="fa fa-user-secret"></i> {{ 'action.browse_actors'|trans }}
+        </a>
+    </li>
+    <li>
+        <a class="btn btn-primary btn-lg" href="{{ path('movie_index') }}">
+            <i class="fa fa-film"></i> {{ 'title.movie_list'|trans }}
+        </a>
+    </li>
+{% endblock %}

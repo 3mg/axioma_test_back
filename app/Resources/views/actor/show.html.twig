@@ -1,0 +1,19 @@
+{% extends 'layout_movies.html.twig' %}
+
+{% block main %}
+    <h1>{{ actor.name }}</h1>
+{% endblock %}
+
+{% block sidebar %}
+    <div class="section">
+        <a href="{{ path('actor_index') }}" class="btn btn-link">
+            {{ 'action.back_to_list'|trans }}
+        </a>
+    </div>
+
+    <div class="section">
+        <a href="{{ path('actor_edit', { id: actor.id }) }}" class="btn btn-lg btn-block btn-success">
+            <i class="fa fa-edit"></i> {{ 'action.edit_contents'|trans }}
+        </a>
+    </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="ru" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="783aa7008400c4caece3674161268e79" resname="post.blank_summary">
+        <source>post.blank_summary</source>
+        <target>Введите краткое содержание вашей записи!</target>
+      </trans-unit>
+      <trans-unit id="fa73363555806657c52c19d108927531" resname="post.blank_content">
+        <source>post.blank_content</source>
+        <target>Ваша запись должна содержать хоть какое-то содержание!</target>
+      </trans-unit>
+      <trans-unit id="398ea2f089ed449457db18529b2372cd" resname="post.too_short_content">
+        <source>post.too_short_content</source>
+        <target>Содержание записи слишком короткое (минимум {{ limit }} символов).</target>
+      </trans-unit>
+      <trans-unit id="02ff60dcc0b40065379855172d44ea46" resname="comment.blank">
+        <source>comment.blank</source>
+        <target>Пожалуйста, не оставляйте текст комментария пустым!</target>
+      </trans-unit>
+      <trans-unit id="b664d13194c946b9ce87c1733512b372" resname="comment.too_short">
+        <source>comment.too_short</source>
+        <target>Комментарий слишком короткий, (минимум {{ limit }} символов).</target>
+      </trans-unit>
+      <trans-unit id="47f25ff4bc56e5434405d0da3b44807e" resname="comment.too_long">
+        <source>comment.too_long</source>
+        <target>Комментарий слишком длинный, (максимум {{ limit }} символов).</target>
+      </trans-unit>
+      <trans-unit id="3b09c3837f08369ba9bb0af6d51c3ff5" resname="comment.is_spam">
+        <source>comment.is_spam</source>
+        <target>Содержание этого комментария было расценено как спам.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

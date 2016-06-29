@@ -1,0 +1,26 @@
+{% extends 'layout_movies.html.twig' %}
+
+{% block body_id 'movie_edit' %}
+
+{% block main %}
+    <h1>{{ 'title.edit_movie'|trans({'%id%': movie.id}) }}</h1>
+
+    {{ include('movie/_form.html.twig', {
+        form: edit_form,
+        button_label: 'action.save'|trans,
+        include_back_to_home_link: true,
+    }, with_context = false) }}
+{% endblock %}
+
+{% block sidebar %}
+    <div class="section actions">
+        {{ include('movie/_form.html.twig', {
+            form: delete_form,
+            button_label: 'action.delete'|trans,
+            button_css: 'btn btn-lg btn-block btn-danger',
+            show_confirmation: true,
+        }, with_context = false) }}
+    </div>
+
+    {{ parent() }}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block header_navigation_links %}
+    <li>
+        <a class="btn btn-primary btn-lg" href="{{ path('author_index') }}">
+            <i class="fa fa-user-secret"></i> {{ 'action.browse_authors'|trans }}
+        </a>
+    </li>
+    <li>
+        <a class="btn btn-primary btn-lg" href="{{ path('book_index') }}">
+            <i class="fa fa-book"></i> {{ 'action.browse_books'|trans }}
+        </a>
+    </li>
+{% endblock %}
