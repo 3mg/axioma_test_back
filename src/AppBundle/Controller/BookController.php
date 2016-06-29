@@ -51,6 +51,7 @@ class BookController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            $book->mergeNewTranslations();
             $em->persist($book);
             $em->flush();
 
