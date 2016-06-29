@@ -63,3 +63,9 @@ services:
         arguments: [ @router, @request_stack ]
         tags:
             - { name: form.type, alias: AppBundle\Form\BookType }
+
+    app.form.movie_type:
+        class: AppBundle\Form\MovieType
+        arguments: [ @router, @request_stack ]
+        tags:
+            - { name: form.type, alias: AppBundle\Form\MovieType }

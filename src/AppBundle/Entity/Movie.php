@@ -16,11 +16,11 @@ class Movie
     use Translation\TranslatableTrait;
 
     const QUALITY_DVDRIP = 1;
-    const QUALITY_HDRIP = 1;
-    const QUALITY_BDRIP = 1;
-    const QUALITY_720P = 1;
-    const QUALITY_1080P = 1;
-    const QUALITY_DVD5 = 1;
+    const QUALITY_HDRIP = 2;
+    const QUALITY_BDRIP = 3;
+    const QUALITY_720P = 4;
+    const QUALITY_1080P = 5;
+    const QUALITY_DVD5 = 6;
 
     public static function getQualities() {
         return [
@@ -209,8 +209,12 @@ class Movie
      *
      * @return \Doctrine\Common\Collections\Collection
      */
-    public function getTags()
+    public function getTags($locale = null)
     {
-        return $this->tags;
+        $currentLocale = $locale ? $locale : $this->getCurrentLocale();
+
+        return $this->tags->filter(function(Tag $tag) use ($currentLocale) {
+            return $tag->getLocale() == $currentLocale;
+        });
     }
 }

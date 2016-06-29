@@ -34,17 +34,9 @@ class Actor
         return $this->id;
     }
 
-    /**
-     * Set name
-     *
-     * @param string $name
-     *
-     * @return Actor
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
 
-        return $this;
+    function __toString()
+    {
+        return $this->getName();
     }
 }
