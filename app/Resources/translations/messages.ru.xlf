@@ -67,7 +67,7 @@
       </trans-unit>
       <trans-unit id="9d15754f37a26a942b5edcad2da9b5dc" resname="title.homepage">
         <source>title.homepage</source>
-        <target>Добро пожаловать в &lt;strong&gt;Symfony Demo&lt;/strong&gt; приложение</target>
+        <target>Добро пожаловать в &lt;strong&gt;Books/Movies&lt;/strong&gt; приложение</target>
       </trans-unit>
       <trans-unit id="6aedc9099c10ddb741e3fe695dbea8ba" resname="title.source_code">
         <source>title.source_code</source>
